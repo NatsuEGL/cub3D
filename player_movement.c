@@ -6,7 +6,7 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 10:43:33 by aamhal            #+#    #+#             */
-/*   Updated: 2024/02/21 13:45:58 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/21 15:53:09 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ void move_player(t_mlx *mlx, float x, float y)
   n_y = roundf(mlx->play->pos_y + y);
   x_map = (n_x / TS);
   y_map = (n_y / TS);
-  if (mlx->drct->map[y_map][x_map] != '1' && mlx->drct->map[y_map][mlx->play->pos_x / TS] && mlx->drct->map[mlx->play->pos_y / TS][x_map])
+  if (mlx->drct->map[y_map][x_map] != '1' && mlx->drct->map[y_map][mlx->play->pos_x / TS] != '1' && mlx->drct->map[mlx->play->pos_y / TS][x_map] != '1')
   {
     mlx->play->pos_x = n_x;
     mlx->play->pos_y = n_y;
