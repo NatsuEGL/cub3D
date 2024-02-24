@@ -6,7 +6,7 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 10:43:42 by aamhal            #+#    #+#             */
-/*   Updated: 2024/02/23 11:10:15 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/24 15:51:09 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
 # define PS 3
 # define RS 0.045
 # define FOV 60
-# define WIDTH 24 * TS
-# define HEIGHT 10 * TS
-# define ROTATION_SPEED 0.085 // rotation speed
+# define WIDTH (24 * TS)
+# define HEIGHT (11 * TS)
+# define ROTATION_SPEED 0.025 // rotation speed
 
 typedef struct l_list
 {
@@ -65,7 +65,7 @@ typedef struct s_player
 typedef struct s_ray
 {
 	double ray_angle;
-	int flag;
+	int		flag;
 	double wall_distance;
 }	t_ray;
 

@@ -6,7 +6,7 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:27:41 by akaabi            #+#    #+#             */
-/*   Updated: 2024/02/23 11:26:40 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/24 15:53:46 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ void    draw_ray_2d(t_mlx *mlx, double angle, double distance, int color)
 
 float nor_angle(float angle)
 {
- if (angle < 0)
-  angle += (2 * M_PI);
- if (angle > (2 * M_PI))
-  angle -= (2 * M_PI);
- return (angle);
+	if (angle < 0)
+		angle += (2 * M_PI);
+	if (angle > (2 * M_PI))
+	angle -= (2 * M_PI);
+	return (angle);
 }
 int inter_check(float angle, float *inter, float *step, int is_horizon)
 {
@@ -167,7 +167,7 @@ void cast_rays(t_mlx *mlx)
     mlx->ray->flag = 1;
   }
 //   render_wall(mlx, ray); // render the wall
-    draw_ray_2d(mlx ,mlx->play->angle, mlx->ray->wall_distance, 0xB99370FF);
+    draw_ray_2d(mlx ,mlx->ray->ray_angle, mlx->ray->wall_distance, 0xB99370FF);
     ray++; // next ray
     mlx->ray->ray_angle += (mlx->play->radfov / WIDTH);
  }
