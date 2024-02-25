@@ -7,7 +7,7 @@ MLX = MLX/libmlx42.a
 FLAG_MLX = -framework Cocoa -framework OpenGL -framework IOKit -lglfw
 INCLUDE = -I/Users/akaabi/.brew/Cellar/glfw/3.3.9/include/GLFW
 LIB = -L/Users/akaabi/.brew/Cellar/glfw/3.3.9/lib
-SRC = main.c check_map.c cub3d_utils.c map.c walls.c inside_map.c resize_map.c direction_parc.c fill_struct.c rgb.c free.c execution.c data_fill.c player_movement.c raycast.c
+SRC = main.c check_map.c cub3d_utils.c map.c walls.c inside_map.c resize_map.c direction_parc.c fill_struct.c rgb.c free.c execution.c data_fill.c player_movement.c raycast.c wall_render.c
 
 
 OBJ = $(SRC:.c=.o)

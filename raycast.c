@@ -6,7 +6,7 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 17:27:41 by akaabi            #+#    #+#             */
-/*   Updated: 2024/02/24 15:53:46 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/25 11:40:51 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,8 +166,8 @@ void cast_rays(t_mlx *mlx)
    mlx->ray->wall_distance = h_inter;
     mlx->ray->flag = 1;
   }
-//   render_wall(mlx, ray); // render the wall
-    draw_ray_2d(mlx ,mlx->ray->ray_angle, mlx->ray->wall_distance, 0xB99370FF);
+  render_wall(mlx, ray); // render the wall
+    // draw_ray_2d(mlx ,mlx->ray->ray_angle, mlx->ray->wall_distance, 0xB99370FF);
     ray++; // next ray
     mlx->ray->ray_angle += (mlx->play->radfov / WIDTH);
  }

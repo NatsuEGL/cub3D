@@ -6,7 +6,7 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 10:43:42 by aamhal            #+#    #+#             */
-/*   Updated: 2024/02/24 15:51:09 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/25 11:41:20 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,8 +150,9 @@ void calculate_move(t_mlx *mlx);
 
 
 // ray cast
-
-
 void cast_rays(t_mlx *mlx);
+
+// wall render
+void render_wall(t_mlx *mlx, int ray);
 ////
 #endif

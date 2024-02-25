@@ -6,12 +6,11 @@
 /*   By: akaabi <akaabi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 10:43:33 by aamhal            #+#    #+#             */
-/*   Updated: 2024/02/21 15:53:09 by akaabi           ###   ########.fr       */
+/*   Updated: 2024/02/24 17:47:03 by akaabi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
 
 void ft_reles(mlx_key_data_t keydata, t_mlx *mlx) // release the key
 {
